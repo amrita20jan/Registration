@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+ <html lang="en" class="no-js"> 
+    <head>
+        <meta charset="UTF-8" />
+        <title>Registered Users</title>
+              
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js"></script>
+        <script src="js/registration_val.js"></script>
+        <script src="js/login_val.js"></script>
+        <script src="js/jquery-1.8.2.js"></script>
+         
+         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        
+       
+        <link rel="shortcut icon" href="../favicon.ico"> 
+     	<link rel="stylesheet" type="text/css" href="css/style.css">
+     	
+     	<script type="text/javascript">
+	     	window.history.forward(-1); 
+		    window.history.forward(1); 
+		</script>
+		
+
+		 <style>
+			body
+				{
+					background-image: url('img/love-lights-background-check-another-cool-hd-wallpaper-l-a-ibackgroundz.com.jpg');
+					background-attachment: fixed;
+					background-size: 100% 100%;
+				}
+		</style>
+
+	<style type="text/css">
+	.centered {
+	        width: 100%;
+	        margin-left: auto;
+	        margin-right: auto;
+	        text-align: center;
+	}
+	</style>
+ </head>
+    <body>
+        
+        
+	  
+		<div id="navbar">	
+		  <div id="dis"></div>
+		</div>
+		
+		
+        <div id="container"><br>
+	    <div id="login-right">
+				
+				
+		<form action=Loginservlet method="get" class="form-horizontal" autocomplete="on"> 
+        <h2>Sign In</h2> 
+        <div class='wlcmmsg' > 
+        <table  width="400" border="0">
+                       
+        <tr>
+	       <td><div class="control-group"><label class="control-label" for="inputEmail">E-mail</label></div></td>
+	       <td><div class="controls"><input type="text" name="email" id="mail" maxlength="50" minlength="7" placeholder="rakesh@gmail.com"></input></div></td>
+        </tr>
+
+
+        <tr>
+          <td><div class="control-group"><label class="control-label" for="inputPassword">Password</label></div></td>
+          <td><div class="controls"><input type="password" name="password" id="pswd" maxlength="50" minlength="7" placeholder=" "></input></div></td>
+        </tr>
+        
+         <tr>
+		   <td><div class="controls"><input type=reset value=clear class="btn-clear"/></div></td>
+		   <td><input type="submit" value="Submit" class="btn-signin" /><td>
+	     </tr>	
+          
+                        
+       </table>
+	</div>						
+   </form>
+    
+   
+   <!-- previous code -->
+	
+	  <form action="insertdata" method="get" class="form-horizontal" autocomplete="on">
+	  <div class="login-margin"></div>
+	   <h2>Sign Up</h2> 
+	   <div class='wlcmmsg' > 
+       <table  width="400" border="0">
+       
+       <tr>
+	       <td><div class="control-group"><label class="control-label" for="inputFirstname">First Name</label></div></td>
+	       <td><div class="controls"><input type="text" name="firstname" id="fname" maxlength="12" minlength="7" placeholder="firstname"></input></div></td>
+	   </tr>
+		
+	  <tr>
+		  <td><div class="control-group"><label class="control-label" for="inputLastname">Last Name </label></div></td>
+          <td><div class="controls"><input type="text" name="lastname" id="lname" maxlength="12" minlength="7" placeholder="lastname"></input></div></td>
+       </tr>
+
+	 
+       <tr>
+	       <td><div class="control-group"><label class="control-label" for="inputUsername">User Name</label></div></td>
+	       <td><div class="controls"><input type="text" name="username" id="uname" maxlength="10" minlength="7" placeholder="anne"></input></div></td>
+       </tr>
+   
+   		
+       <tr>
+	       <td><div class="control-group"><label class="control-label" for="inputEmail">E-mail</label></div></td>
+	       <td><div class="controls"><input type="text" name="email" id="email" maxlength="50" minlength="7" placeholder="rakesh@gmail.com"></input></div></td>
+       </tr>
+
+
+        <tr>
+          <td><div class="control-group"><label class="control-label" for="inputPassword">Password</label></div></td>
+          <td><div class="controls"><input type="password" name="password" id="password" maxlength="50" minlength="7" placeholder=" "></input></div></td>
+       </tr>
+
+        <tr>
+	        <td><div class="control-group"><label class="control-label" for="inputConfirmPassword">Confirm Password</label></div></td>
+	        <td><div class="controls"><input type="password" name="confirmpassword" id="cpassword" maxlength="50" minlength="7"placeholder=" "></input></div></td>
+	    </tr>
+          
+           
+        <tr>
+       <td><div class="control-group"><label class="control-label" for="gender">Gender</label></div></td>
+       <td>
+                <div class="controls">
+					<input type="radio" name="optionsRadios" id="optionsRadios1"value="Male" checked>Male 
+					<input type="radio"name="optionsRadios" id="optionsRadios2" value="Female">Female
+				</div>
+			</td>
+       </tr>
+
+       <tr>
+	       <td><div class="control-group"><label class="control-label" for="inputAddress">Address </label></div></td>
+	       <td><div class="controls"><input type="text" name="address"  maxlength="70" minlength="7" id="address" placeholder="Address"></input></div></td>
+       </tr>
+
+
+       <tr>
+	       <td><div class="control-group"><label class="control-label" for="inputCity">Country </label></div></td>
+	       <td><div class="controls"><input type="text" name="country" id="country" placeholder="India"></input></div></td>
+       </tr>
+
+
+	
+       <tr>
+	       <td><div class="control-group"><label class="control-label" for="inputState">State </label></div></td>
+	       <td><div class="controls"><input type="text" name="state" id="state" placeholder="Delhi"></input></td></div>
+       </tr>
+  
+        <tr>
+		<td>
+			<div class="controls">
+				<input type=reset value=clear class="btn-clear" /></td>
+				<td><input type="submit" value="Submit" class="btn" /></div></td>
+				<!-- <input type="cancel" value="Cancel" class="btn" /> -->
+	     </tr>	
+	
+	<!-- previous code -->
+	
+	</table>
+	</div>						
+   </form>
+				
+		</div>
+							
+        		   
+                <div id="login-left">
+				<h1>Welcome Users</h1>
+					<br>
+					<p>
+					Here You can register yourself <br> 
+					You can able to see the details of all users<br>
+					In a Grid View
+					</p>
+			</div>
+        		
+        		
+			<div class="clear"></div>
+					
+        </div>
+    </body>
+	
+</html>
